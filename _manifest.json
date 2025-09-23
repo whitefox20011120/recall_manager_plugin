@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "群聊撤回管理插件",
   "author": {
-    "name": "白狐 & UnCLAS-Prommer",
+    "name": "白狐",
     "url": "https://github.com/whitefox20011120"
   },
   "license": "MIT",
@@ -29,5 +29,6 @@
   "default_locale": "zh-CN",
   "locales_path": "_locales"
 }
+
 
 
