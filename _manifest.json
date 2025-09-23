@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "host_application": {
-    "min_version": "0.10.0"
+    "min_version": "0.10.3"
   },
   "homepage_url": "https://github.com/whitefox20011120",
   "repository_url": "https://github.com/whitefox20011120/recall_manager_plugin",
@@ -29,3 +29,4 @@
   "default_locale": "zh-CN",
   "locales_path": "_locales"
 }
+
