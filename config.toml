@@ -1,0 +1,78 @@
+# recall_manager_plugin - 自动生成的配置文件
+# 为MaiBot提供群聊消息撤回能力：支持由LLM智能触发的撤回Action，也提供手动命令/recall。
+
+# 插件基本信息配置
+[plugin]
+
+# 是否启用插件
+enabled = true
+
+# 插件版本
+version = "1.0.0"
+
+
+# 组件启用控制
+[components]
+
+# 启用智能撤回 Action
+enable_smart_recall = true
+
+# 启用手动撤回命令
+enable_recall_command = true
+
+
+# 权限管理配置（群组白名单）
+[permissions]
+
+# 允许执行撤回的群组白名单（为空=不限制）。格式：['qq:123456']
+allowed_groups = []
+
+
+# 展示与提示语配置
+[messages]
+
+# 平台可见的撤回提示文案
+recall_display = "🗑️ 正在撤回一条消息（严重违规）…"
+
+error_messages = [
+    "未找到目标消息，请回复目标消息或提供 message_id",
+    "无效的 message_id，请确保格式正确",
+    "撤回失败，请稍后重试"
+]
+
+# 撤回后事后校验相关配置
+[verify]
+
+# 是否在撤回后做一次‘消息仍存在’的简单校验
+enabled = false
+
+# 校验前等待的毫秒数
+delay_ms = 300
+
+# 最大校验次数（每次间隔约0.2秒）
+attempts = 0
+
+
+# 行为与时序控制
+[behavior]
+
+# 撤回延迟毫秒；0=立即撤回
+recall_delay_ms = 0
+
+
+# 日志记录相关配置
+[logging]
+
+# 日志级别: DEBUG/INFO/WARNING/ERROR
+level = "DEBUG"
+
+# 日志前缀
+prefix = "[RecallPlugin]"
+
+# 日志中是否包含用户信息
+include_user_info = true
+
+# 日志中是否包含‘时长信息’（本插件默认为 N/A）
+include_duration_info = true
+
+

@@ -1,0 +1,31 @@
+{
+  "manifest_version": 1,
+  "name": "撤回插件 (Recall Manager Plugin)",
+  "version": "1.0.0",
+  "description": "群聊撤回管理插件：支持智能 LLM 判定、手动命令、权限控制、延时撤回、模板化提示与事后校验。",
+  "author": {
+    "name": "白狐",
+    "url": "https://github.com/whitefox20011120"
+  },
+  "license": "MIT",
+  "host_application": {
+    "min_version": "0.10.0"
+  },
+  "homepage_url": "https://github.com/whitefox20011120",
+  "repository_url": "https://github.com/whitefox20011120/recall_manager_plugin",
+  "keywords": [
+    "recall",
+    "delete",
+    "moderation",
+    "admin",
+    "management",
+    "group"
+  ],
+  "categories": [
+    "Moderation",
+    "Group Management",
+    "Admin Tools"
+  ],
+  "default_locale": "zh-CN",
+  "locales_path": "_locales"
+}
